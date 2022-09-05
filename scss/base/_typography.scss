@@ -75,7 +75,7 @@ header p {
   margin-right: auto;
   margin-bottom: 1rem;
   margin-top: 2rem;
-  
+
   /*font properties*/
   font-weight: 700;
   font-size: 1.5rem;
@@ -103,10 +103,10 @@ header p {
   font-size: 1.5rem;
   text-align: center;
   @include breakpoint2 {
-        /*font properties*/
-        font-size: 1.5rem;
-        text-align: left;
-      }
+    /*font properties*/
+    font-size: 1.5rem;
+    text-align: left;
+  }
 }
 
 .text2 {
@@ -125,10 +125,6 @@ header p {
 
 select {
   /*decoration */
-  -o-appearance: none;
-  -ms-appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36'%3E%3Cpath d='M10.5 15l7.5 7.5 7.5-7.5z' fill='%237477bf'/%3E%3Cpath d='M0 0h36v36h-36z' fill='none'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
@@ -140,4 +136,3 @@ select {
   color: $base-color5;
   background-color: $base-color2;
 }
-
