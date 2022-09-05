@@ -1,0 +1,76 @@
+.member {
+  /*flex properties */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /*sizing and positioning */
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+
+  /*decoration */
+  border-bottom: 0.1rem solid $base-color6;
+  @include breakpoint1 {
+    /*flex properties */
+    flex-direction: row;
+    justify-content: space-between;
+
+    /*sizing and positioning */
+    width: 95%;
+  }
+}
+
+.member:last-child {
+  /*decoration */
+  border-bottom: none;
+}
+
+.member_name {
+  /*sizing and positioning */
+  margin-bottom: 0;
+
+  /*font properties*/
+  font-size: 1.5rem;
+}
+
+.member_info {
+  /*flex properties */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include breakpoint1 {
+    /*flex properties */
+    flex-direction: row;
+  }
+}
+
+.member_text {
+  /*flex properties */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include breakpoint1 {
+    /*flex properties */
+    align-items: flex-start;
+
+    /*sizing and positioning */
+    margin-left: 2rem;
+  }
+}
+
+.member_text2 {
+  /*flex properties */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include breakpoint1 {
+    /*flex properties */
+    align-items: flex-start;
+
+    /*sizing and positioning */
+    margin-left: 2rem;
+  }
+}

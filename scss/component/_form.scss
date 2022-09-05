@@ -1,0 +1,47 @@
+form {
+  /*flex properties */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /*sizing and positioning */
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+form input,
+select,
+textarea {
+  /*sizing and positioning */
+  width: 100%;
+  height: 4rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+
+  /*decoration */
+  opacity: 0.8;
+  border: 0.1rem solid $base-color6;
+  border-radius: 0.5rem;
+
+  /*colors*/
+  background-color: $base-color7;
+  color: #bdbdbd;
+
+  /*font properties*/
+  font-size: 1.5rem;
+}
+
+textarea {
+  /*sizing and positioning */
+  height: 12rem;
+  padding-top: 0.5rem;
+}
+
+form textarea:focus,
+form input:focus {
+  /*colors*/
+  color: $base-color5;
+
+  /*decoration */
+  opacity: 1;
+}

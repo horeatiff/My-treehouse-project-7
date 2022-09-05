@@ -1,0 +1,89 @@
+.chart_titles {
+  /*flex properties */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include breakpoint1 {
+       /*flex properties */
+       flex-direction: row;
+       align-items: baseline;
+     }
+}
+
+.chart {
+  /*sizing and positioning */
+  padding-left: 1.5rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+
+  /*decoration */
+  border-bottom: 0.1rem solid $base-color6;
+  @include breakpoint1 {
+    /*sizing and positioning */
+    margin-bottom: 0;
+
+    /*decoration */
+    border-bottom: none;
+  }
+}
+
+.filters {
+  /*flex properties */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  /*sizing and positioning */
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+  /*cursor*/
+  cursor: pointer;
+  @include breakpoint1 {
+      /*flex properties */
+      display: flex;
+      justify-content: flex-end;
+  
+      /*sizing and positioning */
+      gap: 1rem;
+    }
+}
+
+.filter.active {
+  /*colors*/
+  background-color: #81c98f;
+  color: #ffffff;
+}
+
+.charts_split {
+  @include breakpoint1 {
+    /*flex properties */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    /*decoration */
+    border-bottom: 0.1rem solid $base-color6;
+    border-top: 0.1rem solid $base-color6;
+  }
+}
+
+.chart_half1 {
+  @include breakpoint1 {
+  /*sizing and positioning */
+  width: 50%;
+
+  /*decoration */
+  border-right: 0.1rem solid $base-color6;
+}
+}
+
+.chart_half2 {
+  @include breakpoint1 {
+  /*sizing and positioning */
+  width: 50%;
+}
+}

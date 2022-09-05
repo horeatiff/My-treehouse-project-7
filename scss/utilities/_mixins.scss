@@ -1,0 +1,11 @@
+@mixin breakpoint1 {
+  @media (min-width: $media-breakpoint1) {
+    @content;
+  }
+}
+
+@mixin breakpoint2 {
+  @media (min-width: $media-breakpoint2) {
+    @content;
+  }
+}

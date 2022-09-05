@@ -1,0 +1,32 @@
+svg {
+  /*colors*/
+  fill: $base-color1;
+}
+
+.container_sidebar svg {
+  /*sizing and positioning */
+  vertical-align: middle;
+
+  /*cursor*/
+  cursor: pointer;
+}
+
+.profile_img {
+  /*sizing and positioning */
+  width: 3rem;
+  height: 3rem;
+  margin-left: 1rem;
+
+  /*decoration */
+  border-radius: 50%;
+}
+
+.member_photo {
+  /*sizing and positioning */
+  width: 7rem;
+  height: 7rem;
+  margin-bottom: 0.5rem;
+
+  /*decoration */
+  border-radius: 50%;
+}

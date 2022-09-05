@@ -1,0 +1,85 @@
+#pop {
+  /*sizing and positioning */
+  display: none;
+  max-width: 10rem;
+  top: 0.5rem;
+  left: 3rem;
+  padding: 0.3rem 0.5rem 0.5rem 0.5rem;
+  position: absolute;
+
+  /*decoration */
+  border: 0.1rem solid $base-color4;
+  border-radius: 0.5rem;
+
+  /*colors*/
+  background-color: $base-color3;
+  color: $base-color5;
+
+  /*font properties*/
+  list-style: none;
+  text-align: left;
+}
+
+#pop li {
+  /*font properties*/
+  font-size: 1.5rem;
+}
+
+.notification {
+  /*sizing and positioning */
+  position: absolute;
+  width: 0.6rem;
+  height: 0.6rem;
+  top: 0.1rem;
+  right: 0.9rem;
+
+  /*decoration */
+  border-radius: 50%;
+
+  /*colors*/
+  background-color: lime;
+}
+
+.notification_close {
+  /*sizing and positioning */
+  margin-right: 2rem;
+
+  /*font properties*/
+  font-size: 3rem;
+
+  /*cursor*/
+  cursor: pointer;
+}
+
+.content_alert {
+  /*flex properties */
+  display: flex;
+  justify-content: center;
+}
+
+#alert {
+  /*flex properties */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /*sizing and positioning */
+  width: 90%;
+  height: 3.5rem;
+  margin-top: 1rem;
+  padding-left: 1rem;
+
+  /*colors*/
+  background-color: $base-color2;
+  color: #ffffff;
+
+  /*decoration */
+  border-radius: 0.5rem;
+
+  /*font properties*/
+  font-size: 1.2rem;
+  @include breakpoint1 {
+       /*sizing and positioning */
+       width: 96%;
+}
+}

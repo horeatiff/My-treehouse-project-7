@@ -1,0 +1,57 @@
+.social_media {
+  /*flex properties */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  /*sizing and positioning */
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+
+  /*decoration */
+  border: 0.1rem solid $base-color6;
+  border-radius: 0.5rem;
+
+  /*colors*/
+  background-color: $base-color7;
+  @include breakpoint1 {
+    /*sizing and positioning */
+    width: 100%;
+  }
+}
+
+.social_outlet {
+  /*sizing and positioning */
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 1.5rem;
+
+  /*font properties*/
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  /*colors*/
+  color: $base-color2;
+}
+
+.social_users {
+  /*font properties*/
+  font-size: 4rem;
+
+  /*colors*/
+  color: #777777;
+
+  /*sizing and positioning */
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 1.5rem;
+}
+
+.social_text {
+  /*flex properties */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
