@@ -223,3 +223,13 @@ let mobileChart = new Chart(mobileCanvas, {
   data: mobileData,
   options: mobileOptions,
 });
+
+// chart filters selected
+const filterButtons = document.querySelectorAll(".filter");
+filterButtons.forEach((button, h) => {
+  button.addEventListener("click", handleActiveItems);
+});
+function handleActiveItems(event) {
+  filterButtons.forEach((button) => button.classList.remove("active"));
+  event.target.classList.add("active");
+}
