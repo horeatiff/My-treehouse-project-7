@@ -13,6 +13,19 @@ popUp.addEventListener("mouseover", () => {
     };
 });
 
+popUp.addEventListener("touchstart", () => {
+  const alertBox = document.getElementById("pop");
+  const pop = document.getElementById("notification_icon");
+  if (alertBox.style.display === "none") {
+    alertBox.style.display = "block";
+    pop.style.display = "none";
+  } else
+    touchend = () => {
+      alertBox.style.display = "none";
+      pop.style.display = "block";
+    };
+});
+
 // banner notification
 const notificationBanner = document.getElementById("alert");
 notificationBanner.innerHTML = `<span><strong>Alert: </strong>You have unread messages</span>
